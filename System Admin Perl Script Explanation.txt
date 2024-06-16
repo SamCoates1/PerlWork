@@ -1,0 +1,13 @@
+
+This Perl script performs basic system administration tasks using simple system commands. Here's what the script does:
+
+1. **Display System Uptime**:
+   - The script uses the `system("uptime")` command to show how long the system has been running, including the current time, how long the system has been up, and the number of users logged in.
+
+2. **List Current Users**:
+   - It lists the users currently logged into the system using the `system("who")` command. This shows who is logged in and from where, along with their login time.
+
+3. **Check Disk Usage**:
+   - The script checks the disk usage of the root directory with the `system("df -h /")` command. It displays the disk usage in a human-readable format (e.g., GB and MB).
+
+Each of these tasks is executed using the Perl `system` function, which runs the given command and prints the output directly to the terminal. The script ends with a confirmation message indicating that the tasks have been completed.
